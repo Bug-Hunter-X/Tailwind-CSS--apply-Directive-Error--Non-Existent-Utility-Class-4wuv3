@@ -1,0 +1,16 @@
+The solution is to ensure that the utility class `text-gray-900` is correctly defined in your `tailwind.config.js` file.  If you want to use it, you would add it to your `tailwind.config.js` file's `theme` section or ensure that the correct plugins are installed and configured, then purge or build your CSS to ensure it is included. For this example, `text-gray-900` is a standard Tailwind utility and should already be available.
+
+This corrected code assumes `text-gray-900` is a valid Tailwind class:
+
+```html
+<div class="bg-blue-500 text-gray-900">
+</div>
+```
+
+Using `@apply` is still possible, but only after confirming the class exists:
+```html
+<div class="bg-blue-500 @apply text-gray-900">
+</div>
+```
+
+Remember to rebuild your CSS after making changes to your `tailwind.config.js`.
